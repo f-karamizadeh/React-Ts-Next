@@ -7,7 +7,7 @@ function Component() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   const addTask=(newTask: Task) : void => {
-    setTasks([...tasks, newTask]);
+    setTasks([...tasks, newTask]);};
 
     const toggleTask = ({id}:{id: string}) => {
       setTasks(
@@ -19,10 +19,8 @@ function Component() {
       })
       );
   };
-  };
-  function toggleTask({ id }: { id: string; }): void {
-    throw new Error("Function not implemented.");
-  }
+  
+ 
 
   return (
     <section>
